@@ -8,6 +8,6 @@ RUN apt-get update && \
   ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget
 
 RUN npm install -g @loopback/cli
-RUN npm install -g puppeteer --unsafe-perm
+RUN npm install -g puppeteer@1.13.0 --unsafe-perm
 RUN npm install pm2 -g
 RUN pm2 install pm2-logrotate
